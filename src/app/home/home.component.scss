@@ -1,0 +1,41 @@
+#dynamicContainer {
+  min-height: calc(100vh - 56px);
+  // margin-top: 65px;
+}
+
+.animateimg {
+  animation: slide-in-horizontal-img 1s ease-out;
+}
+
+.animatetext {
+  animation: slide-in-horizontal-text 1s ease-out;
+}
+
+@keyframes slide-in-horizontal-img {
+  0% {
+    transform: translateX(-100%);
+    /* Start from outside the left side of the screen */
+    opacity: 0;
+    /* Optionally start with no opacity */
+  }
+
+  100% {
+    transform: translateX(0);
+    /* End at the default position */
+    opacity: 1;
+    /* Fully visible */
+  }
+}
+
+@keyframes slide-in-horizontal-text {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+}

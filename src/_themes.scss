@@ -1,0 +1,17 @@
+@import '~bootstrap/scss/bootstrap';
+
+// Define light theme
+:root {
+    --bs-body-bg: #fff;
+    --bs-body-color: #212529;
+    --bs-link-color: #0d6efd;
+    // Add more variables as needed
+}
+
+// Define dark theme
+[data-bs-theme="dark"] {
+    --bs-body-bg: #212529;
+    --bs-body-color: #fff;
+    --bs-link-color: #0d6efd;
+    // Add more variables as needed
+}
