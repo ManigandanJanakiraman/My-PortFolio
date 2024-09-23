@@ -130,3 +130,135 @@
     "system"
   ]
 }
+{
+  "Projects": [
+    {
+      "Title": "Report Manager",
+      "Name": "ReportManager.avif",
+      "Experience": "A Report Manager typically refers to a system, tool, or role responsible for managing the creation, distribution, and tracking of reports within an organization. It can serve different purposes depending on the context:",
+      "language": "REACT,.NET"
+    },
+    {
+      "Title": "Report Builder",
+      "Name": "ReportBuilder.avif",
+      "Experience": "A report builder is a tool or software used to create, design, and generate reports based on data from various sources. It often allows users to visually design the layout of the report, specify data fields, and apply filters, formatting, and styling without requiring extensive programming knowledge. Report builders are commonly found in business intelligence (BI) tools, databases, or analytics platforms.",
+      "language": "ANGULAR, .NET CORE"
+    },
+    {
+      "Title": "REmaap",
+      "Name": "REmaap.png",
+      "Experience": "REmaap is an AI-Supported Real Estate Migration & Abstraction Platform. It combines three essential elements of a CRE project (workflow, data, and documents) into one highly configurable, centralized platform where all team members can go to manage lease data and deliver on distinct and essential day-to-day tasks.",
+      "language": "ANGULAR, .NET CORE, MVC"
+    },
+    {
+      "Title": "Record Feedback",
+      "Name": "RecordFeedback.avif",
+      "Experience": "<bold>Record feedback</bold> refers to the process of capturing, storing, and analyzing responses, opinions, or evaluations from users or participants regarding a particular product, service, performance, or event. The feedback can be gathered through various methods, such as surveys, interviews, comment forms, or rating systems.",
+      "language": "ANGULAR, .NET CORE"
+    },
+    {
+      "Title": "Portfolio",
+      "Name": "Portfolio.avif",
+      "Experience": "A portfolio webpage is a personal or professional website that showcases an individual’s work, skills, experiences, and accomplishments. It serves as a digital resume or portfolio, often used by professionals such as designers, developers, writers, artists, and freelancers to display their work samples and demonstrate their expertise to potential clients or employers.",
+      "language": "ANGULAR"
+    }
+  ],
+  "Skills": [
+    {
+      "language": "HTML5",
+      "level": "90%",
+      "image": "html-5.png",
+      "Experience": ""
+    },
+    {
+      "language": "JS",
+      "level": "90%",
+      "image": "js.png",
+      "Experience": ""
+    },
+    {
+      "language": "CSS",
+      "level": "90%",
+      "image": "css-3.png",
+      "Experience": ""
+    },
+    {
+      "language": "SCSS/SASS",
+      "level": "80%",
+      "image": "sass.png",
+      "Experience": ""
+    },
+    {
+      "language": "Bootstrap 5.3",
+      "level": "90%",
+      "image": "icons8-bootstrap-48.png",
+      "Experience": ""
+    },
+    {
+      "language": "ANGULAR",
+      "level": "90%",
+      "image": "icons8-angular-50.png",
+      "Experience": ""
+    },
+    {
+      "language": "NgRx",
+      "level": "75%",
+      "image": "ngRX.svg",
+      "Experience": ""
+    },
+    {
+      "language": "RxJS",
+      "level": "75%",
+      "image": "rxjs.png",
+      "Experience": ""
+    },
+    {
+      "language": "Material",
+      "level": "90%",
+      "image": "material.png",
+      "Experience": ""
+    },
+    {
+      "language": "REACT",
+      "level": "60%",
+      "image": "react.png",
+      "Experience": ""
+    },
+    {
+      "language": "REDUX",
+      "level": "60%",
+      "image": "icons8-redux-50.png",
+      "Experience": ""
+    },
+    {
+      "language": "Ignite UI",
+      "level": "80%",
+      "image": "ig.png",
+      "Experience": ""
+    },
+    {
+      "language": "Mui",
+      "level": "80%",
+      "image": "mui.png",
+      "Experience": ""
+    },
+    {
+      "language": ".NET",
+      "level": "75%",
+      "image": "th.jpeg",
+      "Experience": ""
+    },
+    {
+      "language": ".NET CORE",
+      "level": "75%",
+      "image": ".netcore.png",
+      "Experience": ""
+    }
+  ],
+  "profile": "public/image/profile.jpeg",
+  "icons": [
+    "light",
+    "dark",
+    "system"
+  ]
+}
