@@ -32,31 +32,27 @@
                         send message
                     </button>
                 </div>
-                @if (feedbackForm.dirty || feedbackForm.untouched){
-                @if (feedbackForm.hasError('')) {
-                <div>Please fill the required ffield details</div>
-                }
-                }
             </form>
         </div>
 
     </div>
     <hr>
     <div class="d-flex justify-content-center flex-row gap-2">
-        @if (theme=="dark") {
-        <i class="mdi--facebook-dark icon"></i>
-        <i class="line-md--instagram-dark icon"></i>
-        <i class="uil--linkedin-dark icon"></i>
-        <i class="arcticons--naukricom-dark icon"></i>
-        <i class="bi--github-dark icon"></i>
-        }
-        @else {
-        <i class="mdi--facebook-light icon"></i>
-        <i class="line-md--instagram-light icon"></i>
-        <i class="uil--linkedin-light icon"></i>
-        <i class="arcticons--naukricom-light icon"></i>
-        <i class="bi--github-light icon"></i>
-        }
+        <a href="https://www.facebook.com/mani.j.1127?mibextid=JRoKGi" target="_blank">
+            <i [ngClass]="'mdi--facebook-' + theme + ' icon'"></i>
+        </a>
+        <a href="https://www.instagram.com/manigandan_.j?igsh=YjZvMDVpNWNjY2g1&utm_source=qr" target="_blank">
+            <i [ngClass]="'line-md--instagram-' + theme + ' icon'"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/manigandan-janakiraman-6362b8224" target="_blank">
+            <i [ngClass]="'uil--linkedin-' + theme + ' icon'"></i>
+        </a>
+        <!-- <a href="https://www.instagram.com/manigandan_.j?igsh=YjZvMDVpNWNjY2g1&utm_source=qr" target="_blank">
+            <i [ngClass]="'arcticons--naukricom-' + theme + ' icon'"></i>
+        </a> -->
+        <a href="https://github.com/ManigandanJanakiraman" target="_blank">
+            <i [ngClass]="'bi--github-' + theme + ' icon'"></i>
+        </a>
     </div>
 
 </div>

@@ -4,10 +4,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import emailjs from '@emailjs/browser'
 import { FormBuilder } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule],
+  imports: [FormsModule, CommonModule, ReactiveFormsModule, MatFormFieldModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -43,6 +45,7 @@ export class ContactComponent {
         });
     }
     else {
+      this.openSnackBar("Please enter the details")
       this.feedbackForm.markAllAsTouched();
     }
 
@@ -51,7 +54,7 @@ export class ContactComponent {
 
   openSnackBar(message: string) {
     this._snackBar.open(message, "Close", {
-      horizontalPosition: 'center', verticalPosition: 'top',
+      horizontalPosition: 'center', verticalPosition: 'bottom',
     });
   }
 }

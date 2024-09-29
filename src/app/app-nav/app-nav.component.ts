@@ -28,10 +28,13 @@ export class AppNavComponent {
   @Output() updateTheme = new EventEmitter<string>()
   data!: my_Data;
   themes!: string[]
-  currentTheme: string = "dark"
+  currentTheme: string = ""
+  systemTheme: string = ""
   constructor(private pfService: PortfolioService) { }
   profileImagePath = 'https://lh3.googleusercontent.com/ogw/AF2bZyjowvj14sw-qUU5PLZWjgqoQ3jkPsVExTMV1rHAGGPp3GI=s32-c-mo';
   ngOnInit() {
+    this.systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    this.currentTheme = "system"
     this.pfService.getData().subscribe({
       next: (response) => {
         this.data = response;
@@ -48,6 +51,7 @@ export class AppNavComponent {
   toggleTheme(theme: string): void {
     debugger
     this.currentTheme = theme
-    this.updateTheme.emit(this.currentTheme)
+    const Theme = theme == "system" ? this.systemTheme : theme
+    this.updateTheme.emit(Theme)
   }
 }

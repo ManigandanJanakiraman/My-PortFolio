@@ -17,21 +17,14 @@ export class AppComponent {
   }
 
   toggleTheme(event: string) {
-    debugger
     if (event == 'dark') {
       document.documentElement.setAttribute('data-bs-theme', 'dark');
       localStorage.setItem('theme', 'dark');
     }
-    else if (event == 'system') {
-      this.applySystemTheme()
-    } else {
+    else {
       document.documentElement.removeAttribute('data-bs-theme');
       localStorage.setItem('theme', 'light');
     }
   }
 
-  applySystemTheme() {
-    const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    this.toggleTheme(systemTheme);
-  }
 }

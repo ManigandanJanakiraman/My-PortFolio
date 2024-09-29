@@ -121,6 +121,18 @@
       "level": "75%",
       "image": ".netcore.png",
       "Experience": ""
+    },
+    {
+      "language": "REST",
+      "level": "75%",
+      "image": "",
+      "Experience": ""
+    },
+    {
+      "language": "GRAPH QL",
+      "level": "75%",
+      "image": "",
+      "Experience": ""
     }
   ],
   "profile": "public/image/profile.jpeg",
