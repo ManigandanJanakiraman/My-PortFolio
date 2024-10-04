@@ -50,7 +50,11 @@ export class AppNavComponent {
   }
   toggleTheme(theme: string): void {
     debugger
-    this.currentTheme = theme
+    this.currentTheme = this.systemTheme = theme
+    if (theme == "system") {
+      this.systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+
+    }
     const Theme = theme == "system" ? this.systemTheme : theme
     this.updateTheme.emit(Theme)
   }
