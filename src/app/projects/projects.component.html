@@ -5,11 +5,12 @@
   <div class="row ">
     <div class="col d-flex flex-wrap gap-4 justify-content-center ">
       @for (project of projects; track $index) {
-      <div class="shadow-sm p-3  bg-body-tertiary rounded pr-card-ds justify-content-between">
+      <div class="shadow-sm p-3  bg-body-tertiary rounded pr-card-ds justify-content-between" #ProjectCard
+        (click)="visitCard($index)">
         <img class="card-img-top" style="width: 200px;height: 100px;" [src]="'image/'+project.Name" alt="Title" />
         <h4 class="card-title">{{project.Title}}</h4>
         <p class="card-text fst-italic">{{project.language}}</p>
-        <p class="card-text fw-light experience-truncate" [innerHTML]="project.Experience"></p>
+        <p class="card-text fw-light experience experience-truncate" [innerHTML]="project.Experience"></p>
       </div>
       }
     </div>
